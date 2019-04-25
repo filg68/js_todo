@@ -1,25 +1,4 @@
-<section class="todoapp">
-  <header class="header">
-    <h1>todos</h1>
-    <form id="new-form">
-      <input type="text" class="new-todo" />
-    </form>
-  </header>
-
-  <section class="main">
-    <ul class="todo-list">
-    </ul>
-
-  </section>
-</section>
-
-<script>
-  $(function() {
-    $('#new-form').submit(function(event) {
-      event.preventDefault();
-      var textbox = $('.new-todo');
-      console.log("Task: ", textbox.val());
-    });
+ $(function() {
     // The taskHtml method takes in a JavaScript representation
     // of the task and produces an HTML represenation using
     // <li> tags
@@ -59,4 +38,3 @@
 
     });
   });
-</script>
